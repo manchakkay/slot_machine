@@ -24,7 +24,7 @@ section#landing {
 
 .land-wrapper {
     position: relative;
-    width: 1200px;
+    width: 1120px;
 
     display: flex;
     flex-direction: row;
@@ -101,7 +101,7 @@ section#landing {
     display: flex;
     flex-direction: row;
 
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 .title-row span {
     display: inline-block;

@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section#landing {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-color: #1c1b34;
+
+    font-family: "Apparat", sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+
+.land-wrapper {
+    position: relative;
+    width: 1200px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    margin: 0 auto;
+
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.land-info {
+    width: 600px;
+    margin-left: 20px;
+}
+
+.land-info .land-spin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0px solid transparent;
+    outline: none;
+
+    width: 220px;
+    height: 80px;
+    background: #5547f6;
+    border-radius: 8px;
+
+    color: white;
+
+    font-family: "Apparat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 100%;
+
+    transition: background 0.2s ease-out, color 0.2s ease-out;
+}
+
+.land-info .land-spin-wrapper .land-spin-button:hover {
+    background: #39309d;
+}
+
+.land-info .land-spin-wrapper .land-spin-button:active,
+.land-info .land-spin-wrapper.active .land-spin-button {
+    background: #2a2380;
+    color: #4f47b2;
+}
+
+/* Заголовок */
+.land-title {
+    font-family: "Apparat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 96px;
+
+    white-space: nowrap;
+
+    user-select: none;
+}
+
+.land-graphics {
+    width: 720px;
+    height: 720px;
+}
+
+.title-row {
+    position: relative;
+    height: 96px;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 8px;
+}
+.title-row span {
+    display: inline-block;
+
+    margin-right: 20px;
+}
+
+/* Слот машина */
+.land-title-slot {
+    position: relative;
+    height: 100%;
+
+    display: inline-block;
+
+    overflow-y: hidden;
+}
+.slot-set-0 {
+    width: 600px;
+}
+.slot-set-1 {
+    width: 600px;
+}
+
+.slot-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slot-wrapper > * {
+    position: absolute;
+}
+
+.slot-set-illustration {
+    position: relative;
+    width: 720px;
+    height: 100%;
+
+    display: inline-block;
+
+    /* overflow-y: hidden; */
+}
+
+.slot-set-illustration img {
+    display: block;
+}
+
+/* Цвет текста */
+
+.slot-set-0 div.active,
+.slot-set-1 div.active {
+    transition: color 0.35s ease-in-out;
+}
+
+.slot-set-0 div:not(.active),
+.slot-set-1 div:not(.active) {
+    transition: color 0.35s 0.2s ease-in-out;
+    color: #6f6ca4;
+}
+
+.slot-set-0 div[data-slot-index="0"].active {
+    color: #efb435;
+}
+.slot-set-0 div[data-slot-index="1"].active {
+    color: #5547f6;
+}
+.slot-set-0 div[data-slot-index="2"].active {
+    color: #5547f6;
+}
+.slot-set-0 div[data-slot-index="3"].active {
+    color: #38b878;
+}
+.slot-set-0 div[data-slot-index="4"].active {
+    color: #ff7a59;
+}
+.slot-set-0 div[data-slot-index="5"].active {
+    color: #38b878;
+}
+
+.slot-set-1 div[data-slot-index="0"].active {
+    color: #a162ff;
+}
+.slot-set-1 div[data-slot-index="1"].active {
+    color: #efb435;
+}
+.slot-set-1 div[data-slot-index="2"].active {
+    color: #ff7a59;
+}
+.slot-set-1 div[data-slot-index="3"].active {
+    color: #efb435;
+}
+.slot-set-1 div[data-slot-index="4"].active {
+    color: #5547f6;
+}
+.slot-set-1 div[data-slot-index="5"].active {
+    color: #efb435;
+}
+
+.land-spin-wrapper {
+    margin-top: 48px;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.land-spin-lever {
+    margin-left: 8px;
+    position: relative;
+}
+
+.land-spin-lever > * {
+    position: absolute;
+
+    transition: top 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.lever-root {
+    width: 32px;
+    height: 10px;
+
+    top: -5px; /* 10 / 2 */
+
+    background-color: #5547f6;
+
+    border-bottom-right-radius: 10px;
+}
+
+.lever-stick {
+    width: 10px;
+    height: 12px;
+
+    left: 22px; /* 32 - 10 */
+    top: -16px; /* -10 - 5/2 */
+
+    background-color: #5547f6;
+}
+
+.lever-ball {
+    width: 28px;
+    height: 28px;
+
+    left: 14px;
+    top: -50px;
+
+    border-radius: 100%;
+
+    background-color: #ff7a59;
+}
+
+.land-spin-wrapper.active .lever-stick,
+.land-spin-wrapper:active .lever-stick {
+    height: 0px;
+    top: 0px;
+}
+.land-spin-wrapper.active .lever-ball,
+.land-spin-wrapper:active .lever-ball {
+    top: -14px;
+}

@@ -117,6 +117,7 @@ section#landing {
     display: inline-block;
 
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 .slot-set-0 {
     width: 600px;

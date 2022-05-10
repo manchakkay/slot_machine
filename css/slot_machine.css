@@ -24,7 +24,7 @@ section#landing {
 
 .land-wrapper {
     position: relative;
-    width: 1120px;
+    width: 1160px;
 
     display: flex;
     flex-direction: row;
@@ -38,7 +38,7 @@ section#landing {
 }
 
 .land-info {
-    width: 580px;
+    width: 600px;
     margin-left: 0px;
 }
 

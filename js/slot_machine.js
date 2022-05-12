@@ -452,9 +452,9 @@ slot_machine.init({
     selectors: [".slot-set-0", ".slot-set-1", ".slot-set-illustration"],
     // >1200, >960, >640, >480, >0
     row_heights: [
-        { 0: 96, 1: 80, 2: 72, 3: null, 4: null },
-        { 0: 96, 1: 80, 2: 72, 3: null, 4: null },
-        { 0: 720, 1: 620, 2: 460, 3: null, 4: null }
+        { 0: 96, 1: 80, 2: 72, 3: 64, 4: null },
+        { 0: 96, 1: 80, 2: 72, 3: 64, 4: null },
+        { 0: 720, 1: 620, 2: 460, 3: 460, 4: null }
     ],
     slots: {
         sets: [

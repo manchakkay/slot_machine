@@ -1,0 +1,73 @@
+@media (max-width: 479px) {
+    section#landing {
+        min-height: unset;
+        max-height: unset;
+
+        /* overflow-y: unset; */
+    }
+
+    .land-wrapper {
+        width: 300px;
+        flex-direction: column;
+
+        padding-top: 96px;
+        padding-bottom: 64px;
+    }
+
+    .land-graphics {
+        width: 300px;
+        height: 280px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+
+        margin-top: 32px;
+    }
+
+    .slot-set-illustration {
+        width: 300px;
+
+        transform: translateY(-30px);
+
+        overflow-y: unset;
+    }
+
+    .slot-set-illustration img {
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+    .land-info {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .land-title {
+        font-size: 52px;
+        line-height: 64px;
+    }
+
+    .title-row {
+        height: 64px;
+    }
+
+    .title-row span {
+        margin-right: 12px;
+    }
+
+    .land-info .land-spin-button {
+        width: 180px;
+        height: 64px;
+        font-size: 28px;
+    }
+
+    .land-spin-wrapper {
+        margin-top: 40px;
+    }
+}

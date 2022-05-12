@@ -1,3 +1,10 @@
+@media (min-width: 1280px) {
+    .land-wrapper {
+        width: 1160px;
+        flex-direction: row;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +14,7 @@ section#landing {
     width: 100%;
     height: auto;
     min-height: 100vh;
+    max-height: 1080px;
 
     display: flex;
     flex-direction: column;
@@ -24,10 +32,8 @@ section#landing {
 
 .land-wrapper {
     position: relative;
-    width: 1160px;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: left;
 
@@ -40,40 +46,6 @@ section#landing {
 .land-info {
     width: 600px;
     margin-left: 0px;
-}
-
-.land-info .land-spin-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 0px solid transparent;
-    outline: none;
-
-    width: 220px;
-    height: 80px;
-    background: #5547f6;
-    border-radius: 8px;
-
-    color: white;
-
-    font-family: "Apparat";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 100%;
-
-    transition: background 0.2s ease-out, color 0.2s ease-out;
-}
-
-.land-info .land-spin-wrapper .land-spin-button:hover {
-    background: #39309d;
-}
-
-.land-info .land-spin-wrapper .land-spin-button:active,
-.land-info .land-spin-wrapper.active .land-spin-button {
-    background: #2a2380;
-    color: #4f47b2;
 }
 
 /* Заголовок */
@@ -147,6 +119,8 @@ section#landing {
 
 .slot-set-illustration img {
     display: block;
+    width: 720px;
+    height: 720px;
 }
 
 /* Цвет текста */
@@ -209,6 +183,40 @@ section#landing {
     align-items: center;
 
     cursor: pointer;
+}
+
+.land-info .land-spin-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0px solid transparent;
+    outline: none;
+
+    width: 220px;
+    height: 80px;
+    background: #5547f6;
+    border-radius: 8px;
+
+    color: white;
+
+    font-family: "Apparat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 100%;
+
+    transition: background 0.2s ease-out, color 0.2s ease-out;
+}
+
+.land-info .land-spin-wrapper .land-spin-button:hover {
+    background: #39309d;
+}
+
+.land-info .land-spin-wrapper .land-spin-button:active,
+.land-info .land-spin-wrapper.active .land-spin-button {
+    background: #2a2380;
+    color: #4f47b2;
 }
 
 .land-spin-lever {

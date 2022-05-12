@@ -211,9 +211,9 @@ var slot_machine = {
                 let index = slot_elem.getAttribute("data-slot-index");
                 slot_elem.style.top =
                     -1 *
-                    index *
-                    this.config.height_multiplier *
-                    slot.heights[this.data.width_index] +
+                        index *
+                        this.config.height_multiplier *
+                        slot.heights[this.data.width_index] +
                     "px";
             });
 
@@ -229,9 +229,9 @@ var slot_machine = {
                     slot_elem.style.top =
                         step_before +
                         -1 *
-                        index *
-                        this.config.height_multiplier *
-                        slot.heights[this.data.width_index] +
+                            index *
+                            this.config.height_multiplier *
+                            slot.heights[this.data.width_index] +
                         "px";
                 });
 
@@ -246,9 +246,9 @@ var slot_machine = {
                     slot_elem.style.top =
                         step_after +
                         -1 *
-                        index *
-                        this.config.height_multiplier *
-                        slot.heights[this.data.width_index] +
+                            index *
+                            this.config.height_multiplier *
+                            slot.heights[this.data.width_index] +
                         "px";
                 });
 
@@ -266,8 +266,8 @@ var slot_machine = {
             slot.wrapper
                 .querySelectorAll(
                     'div[data-slot-index="' +
-                    this.data.combination[index] +
-                    '"]'
+                        this.data.combination[index] +
+                        '"]'
                 )
                 .forEach((elem) => {
                     elem.classList.add("active");
@@ -313,7 +313,7 @@ var slot_machine = {
                         // );
                         if (
                             temp_combination[0] ===
-                            combination_array.targets[0] &&
+                                combination_array.targets[0] &&
                             temp_combination[1] === combination_array.targets[1]
                         ) {
                             temp_combination.push(combination_array.targets[2]);
@@ -417,8 +417,8 @@ var slot_machine = {
             slot.wrapper
                 .querySelectorAll(
                     'div[data-slot-index="' +
-                    this.data.combination[index] +
-                    '"]'
+                        this.data.combination[index] +
+                        '"]'
                 )
                 .forEach((elem) => {
                     elem.classList.add("active");
@@ -452,9 +452,9 @@ slot_machine.init({
     selectors: [".slot-set-0", ".slot-set-1", ".slot-set-illustration"],
     // >1200, >960, >640, >480, >0
     row_heights: [
-        { 0: 96, 1: null, 2: null, 3: null, 4: null },
-        { 0: 96, 1: null, 2: null, 3: null, 4: null },
-        { 0: 720, 1: null, 2: null, 3: null, 4: null }
+        { 0: 96, 1: 96, 2: 96, 3: null, 4: null },
+        { 0: 96, 1: 96, 2: 96, 3: null, 4: null },
+        { 0: 720, 1: 640, 2: 720, 3: null, 4: null }
     ],
     slots: {
         sets: [

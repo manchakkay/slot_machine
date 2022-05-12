@@ -23,13 +23,17 @@
         align-items: center;
         justify-content: center;
 
+        overflow: hidden;
+
         margin-top: 32px;
     }
 
     .slot-set-illustration {
         width: 620px;
 
-        overflow-y: hidden;
+        transform: translateY(-80px);
+
+        overflow-y: unset;
     }
 
     .slot-set-illustration img {
@@ -38,7 +42,7 @@
     }
 
 
-    
+
     .land-info {
         width: 620px;
         margin-left: 0px;

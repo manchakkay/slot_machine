@@ -8,9 +8,8 @@
 
     .land-wrapper {
         width: 600px;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
-        padding-top: 108px;
         padding-bottom: 64px;
     }
 
@@ -18,7 +17,7 @@
         width: 600px;
         height: 600px;
 
-        margin-top: 48px;
+        margin-bottom: 36px;
     }
 
     .slot-set-illustration {

@@ -15,20 +15,20 @@
     }
 
     .land-graphics {
-        width: 600px;
-        height: 560px;
+        width: 360px;
+        height: 360px;
 
         margin-top: 32px;
     }
 
     .slot-set-illustration {
-        width: 600px;
+        width: 360px;
 
         overflow-y: hidden;
     }
 
     .slot-set-illustration img {
-        width: 600px;
-        height: 600px;
+        width: 360px;
+        height: 360px;
     }
 }

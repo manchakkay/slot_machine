@@ -7,7 +7,7 @@
     }
 
     .land-wrapper {
-        width: 620px;
+        width: 460px;
         flex-direction: column;
 
         padding-top: 96px;
@@ -15,40 +15,20 @@
     }
 
     .land-graphics {
-        width: 620px;
-        height: 620px;
+        width: 460px;
+        height: 460px;
 
         margin-top: 32px;
     }
 
     .slot-set-illustration {
-        width: 620px;
+        width: 460px;
 
         overflow-y: hidden;
     }
 
     .slot-set-illustration img {
-        width: 620px;
-        height: 620px;
-    }
-
-
-    
-    .land-info {
-        width: 400px;
-        margin-left: 0px;
-    }
-
-    .land-title {
-        font-size: 48px;
-        line-height: 64px;
-    }
-
-    .title-row {
-        height: 64px;
-    }
-
-    .title-row span {
-        margin-right: 12px;
+        width: 460px;
+        height: 460px;
     }
 }

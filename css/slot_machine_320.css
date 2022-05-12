@@ -49,12 +49,12 @@
     }
 
     .land-title {
-        font-size: 52px;
-        line-height: 64px;
+        font-size: 40px;
+        line-height: 48px;
     }
 
     .title-row {
-        height: 64px;
+        height: 48px;
     }
 
     .title-row span {
@@ -68,6 +68,6 @@
     }
 
     .land-spin-wrapper {
-        margin-top: 40px;
+        margin-top: 24px;
     }
 }

@@ -1,4 +1,4 @@
-@media (max-width: 959px) and (min-width: 640px) {
+@media (max-width: 639px) and (min-width: 480px) {
     section#landing {
         min-height: unset;
         max-height: unset;

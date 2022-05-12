@@ -11,7 +11,7 @@
         flex-direction: column;
 
         padding-top: 96px;
-        padding-bottom: 64px;
+        padding-bottom: 48px;
     }
 
     .land-graphics {
@@ -62,12 +62,36 @@
     }
 
     .land-info .land-spin-button {
-        width: 180px;
-        height: 64px;
-        font-size: 28px;
+        width: 128px;
+        height: 48px;
+        font-size: 20px;
     }
 
     .land-spin-wrapper {
         margin-top: 24px;
+    }
+
+    .lever-root {
+        width: 20px;
+        height: 8px;
+    }
+
+    .lever-stick {
+        width: 8px;
+        height: 10px;
+        left: 12px;
+        top: -13px;
+    }
+
+    .lever-ball {
+        width: 20px;
+        height: 20px;
+        left: 7px;
+        top: -37px;
+    }
+
+    .land-spin-wrapper.active .lever-ball,
+    .land-spin-wrapper:active .lever-ball {
+        top: -11px;
     }
 }

@@ -7,7 +7,7 @@
     }
 
     .land-wrapper {
-        width: 460px;
+        width: 620px;
         flex-direction: column;
 
         padding-top: 96px;
@@ -15,20 +15,59 @@
     }
 
     .land-graphics {
-        width: 460px;
-        height: 460px;
+        width: 620px;
+        height: 480px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
 
         margin-top: 32px;
     }
 
     .slot-set-illustration {
-        width: 460px;
+        width: 620px;
 
-        overflow-y: hidden;
+        transform: translateY(-80px);
+
+        overflow-y: unset;
     }
 
     .slot-set-illustration img {
-        width: 460px;
-        height: 460px;
+        width: 620px;
+        height: 620px;
+    }
+
+
+
+    .land-info {
+        width: 620px;
+        margin-left: 0px;
+    }
+
+    .land-title {
+        font-size: 56px;
+        line-height: 72px;
+    }
+
+    .title-row {
+        height: 72px;
+    }
+
+    .title-row span {
+        margin-right: 12px;
+    }
+
+    .land-info .land-spin-button {
+        width: 180px;
+        height: 64px;
+        font-size: 28px;
+    }
+
+    .land-spin-wrapper {
+        margin-top: 40px;
     }
 }

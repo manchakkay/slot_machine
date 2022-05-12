@@ -292,54 +292,54 @@ var slot_machine = {
         if (this.data.prev_combination_status === "success") {
             let chance = Math.random();
 
-            if (chance < 0) {
-                //console.log("Calculating (after success) -> Random");
+            // if (chance < 0) {
+            //     //console.log("Calculating (after success) -> Random");
 
-                do {
-                    temp_combination = [
-                        Math.floor(Math.random() * 6),
-                        Math.floor(Math.random() * 6)
-                    ];
+            //     do {
+            //         temp_combination = [
+            //             Math.floor(Math.random() * 6),
+            //             Math.floor(Math.random() * 6)
+            //         ];
 
-                    let corellation = false;
+            //         let corellation = false;
 
-                    // Checking for success combination
-                    this.data.combinations.forEach((combination_array) => {
-                        //console.log(
-                        // "CMP: " +
-                        //     temp_combination +
-                        //     " = " +
-                        //     combination_array.targets
-                        // );
-                        if (
-                            temp_combination[0] ===
-                            combination_array.targets[0] &&
-                            temp_combination[1] === combination_array.targets[1]
-                        ) {
-                            temp_combination.push(combination_array.targets[2]);
-                            corellation = true;
-                            //console.log("AS: Correlation!");
-                        }
-                    });
-                    // If not success
-                    if (!corellation) {
-                        temp_combination.push(5);
-                        //console.log("AS: Found fail");
-                    } else {
-                        //console.log("AS: Found success");
-                    }
-                } while (temp_combination.equals(this.data.prev_combination));
-            } else {
-                //console.log("Calculating (after success) -> Success");
+            //         // Checking for success combination
+            //         this.data.combinations.forEach((combination_array) => {
+            //             //console.log(
+            //             // "CMP: " +
+            //             //     temp_combination +
+            //             //     " = " +
+            //             //     combination_array.targets
+            //             // );
+            //             if (
+            //                 temp_combination[0] ===
+            //                 combination_array.targets[0] &&
+            //                 temp_combination[1] === combination_array.targets[1]
+            //             ) {
+            //                 temp_combination.push(combination_array.targets[2]);
+            //                 corellation = true;
+            //                 //console.log("AS: Correlation!");
+            //             }
+            //         });
+            //         // If not success
+            //         if (!corellation) {
+            //             temp_combination.push(5);
+            //             //console.log("AS: Found fail");
+            //         } else {
+            //             //console.log("AS: Found success");
+            //         }
+            //     } while (temp_combination.equals(this.data.prev_combination));
+            // } else {
+            //console.log("Calculating (after success) -> Success");
 
-                do {
-                    temp_combination = this.data.combinations[
-                        Math.floor(
-                            Math.random() * this.data.combinations.length
-                        )
-                    ].targets;
-                } while (temp_combination.equals(this.data.prev_combination));
-            }
+            do {
+                temp_combination = this.data.combinations[
+                    Math.floor(
+                        Math.random() * this.data.combinations.length
+                    )
+                ].targets;
+            } while (temp_combination.equals(this.data.prev_combination));
+            // }
         } else {
             //console.log("Calculating (after fail) -> Success");
             do {
@@ -361,7 +361,7 @@ var slot_machine = {
         return [
             (1 / 6) * this.data.combination[0],
             (1 / 6) * this.data.combination[1],
-            (1 / 6) * this.data.combination[2]
+            (1 / 5) * this.data.combination[2]
         ];
     },
     start: function () {
@@ -474,7 +474,7 @@ slot_machine.init({
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-2.svg'>",
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-3.svg'>",
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-4.svg'>",
-                "<img src='https://333616.selcdn.ru/links/SlotMachine/image-none.svg'>"
+                // "<img src='https://333616.selcdn.ru/links/SlotMachine/image-none.svg'>"
             ]
         ],
         combinations: [

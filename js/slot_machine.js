@@ -46,7 +46,7 @@ var landing_scaler = {
         });
     },
     resize: function () {
-        let elem = document.querySelector(".land-wrapper");
+        let elem = document.querySelector("section#landing");
         let w = support.getWidth();
         let s = 1;
 

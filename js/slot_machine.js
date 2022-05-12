@@ -46,7 +46,7 @@ var landing_scaler = {
         });
     },
     resize: function () {
-        let elem = document.querySelector("section#landing");
+        let elem = document.querySelector(".land-wrapper");
         let w = support.getWidth();
         let s = 1;
 
@@ -62,7 +62,7 @@ var landing_scaler = {
             s = w / 320;
         }
 
-        elem.style.transform = "scale(" + s + ")";
+        elem.style.zoom = s;
     }
 };
 

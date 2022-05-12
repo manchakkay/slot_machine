@@ -16,7 +16,7 @@
 
     .land-graphics {
         width: 460px;
-        height: 460px;
+        height: 400px;
 
         display: flex;
         flex-direction: column;
@@ -31,7 +31,7 @@
     .slot-set-illustration {
         width: 460px;
 
-        transform: translateY(-80px);
+        transform: translateY(-30px);
 
         overflow-y: unset;
     }

@@ -1,6 +1,6 @@
 @media (min-width: 1280px) {
     .land-wrapper {
-        width: 1160px;
+        width: 1040px;
         flex-direction: row;
     }
 }
@@ -62,8 +62,9 @@ section#landing {
 }
 
 .land-graphics {
-    width: 720px;
-    height: 720px;
+    width: 680px;
+    height: 680px;
+    transform: translateX(-80px);
 }
 
 .title-row {
@@ -109,7 +110,7 @@ section#landing {
 
 .slot-set-illustration {
     position: relative;
-    width: 720px;
+    width: 680px;
     height: 100%;
 
     display: inline-block;
@@ -119,8 +120,8 @@ section#landing {
 
 .slot-set-illustration img {
     display: block;
-    width: 720px;
-    height: 720px;
+    width: 680px;
+    height: 680px;
 }
 
 /* Цвет текста */

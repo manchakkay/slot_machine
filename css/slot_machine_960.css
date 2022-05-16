@@ -45,7 +45,7 @@
     .land-graphics {
         width: 560px;
         height: 560px;
-        transform: translateX(-80px);
+        transform: translateX(-40px);
     }
 
     .land-info .land-spin-button {

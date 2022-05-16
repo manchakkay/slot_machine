@@ -33,7 +33,7 @@
     .slot-set-illustration {
         width: 540px;
 
-        transform: translateY(-80px);
+        transform: translateY(-40px);
 
         overflow-y: unset;
     }

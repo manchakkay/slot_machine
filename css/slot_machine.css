@@ -155,6 +155,9 @@ section#landing {
 .slot-set-0 div[data-slot-index="5"].active {
     color: #38b878;
 }
+.slot-set-0 div[data-slot-index="6"].active {
+    color: #FF7A59;
+}
 
 .slot-set-1 div[data-slot-index="0"].active {
     color: #a162ff;
@@ -173,6 +176,9 @@ section#landing {
 }
 .slot-set-1 div[data-slot-index="5"].active {
     color: #efb435;
+}
+.slot-set-1 div[data-slot-index="6"].active {
+    color: #EFB435;
 }
 
 .land-spin-wrapper {

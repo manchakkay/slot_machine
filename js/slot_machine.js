@@ -475,7 +475,7 @@ slot_machine.init({
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-2.svg'>",
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-3.svg'>",
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-4.svg'>",
-                "<img src='https://333616.selcdn.ru/links/SlotMachine/image-5.svg'>"
+                "<img src='https://333616.selcdn.ru/links/SlotMachine/image-5-upd.svg'>"
             ]
         ],
         combinations: [

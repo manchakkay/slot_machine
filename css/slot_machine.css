@@ -13,7 +13,7 @@ body {
 section#landing {
     width: 100%;
     height: auto;
-    min-height: 100vh;
+    min-height: 720p;
     max-height: 1080px;
 
     display: flex;

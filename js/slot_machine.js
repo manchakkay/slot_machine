@@ -38,33 +38,33 @@ var support = {
     }
 };
 
-var landing_scaler = {
-    init: function () {
-        this.resize();
-        window.addEventListener("resize", () => {
-            this.resize();
-        });
-    },
-    resize: function () {
-        let elem = document.querySelector(".land-wrapper");
-        let w = support.getWidth();
-        let s = 1;
+// var landing_scaler = {
+//     init: function () {
+//         this.resize();
+//         window.addEventListener("resize", () => {
+//             this.resize();
+//         });
+//     },
+//     resize: function () {
+//         let elem = document.querySelector(".land-wrapper");
+//         let w = support.getWidth();
+//         let s = 1;
 
-        if (w >= 1200) {
-            s = w / 1200;
-        } else if (w >= 960) {
-            s = w / 960;
-        } else if (w >= 640) {
-            s = w / 640;
-        } else if (w >= 480) {
-            s = w / 480;
-        } else {
-            s = w / 320;
-        }
+//         if (w >= 1200) {
+//             s = w / 1200;
+//         } else if (w >= 960) {
+//             s = w / 960;
+//         } else if (w >= 640) {
+//             s = w / 640;
+//         } else if (w >= 480) {
+//             s = w / 480;
+//         } else {
+//             s = w / 320;
+//         }
 
-        elem.style.zoom = s;
-    }
-};
+//         elem.style.zoom = s;
+//     }
+// };
 
 var slot_machine = {
     // Данные
@@ -446,7 +446,7 @@ var slot_machine = {
     }
 };
 
-landing_scaler.init();
+// landing_scaler.init();
 slot_machine.init({
     button: ".land-spin-wrapper",
     selectors: [".slot-set-0", ".slot-set-1", ".slot-set-illustration"],

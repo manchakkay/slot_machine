@@ -350,7 +350,7 @@ var slot_machine = {
         }
 
         //console.log("!!!!!! Combination found: " + temp_combination);
-        if (temp_combination[2] === 6) {
+        if (temp_combination[2] === 5) {
             this.data.combination_status = "fail";
         } else {
             this.data.combination_status = "success";
@@ -361,7 +361,7 @@ var slot_machine = {
         return [
             (1 / 7) * this.data.combination[0],
             (1 / 7) * this.data.combination[1],
-            (1 / 6) * this.data.combination[2]
+            (1 / 5) * this.data.combination[2]
         ];
     },
     start: function () {
@@ -470,7 +470,7 @@ slot_machine.init({
             ["future", "fun", "blockchain", "art", "future", "today", "earn"],
             // 0 - Tech&Fut, 1-Social&Fun, 2-Game&Blockch, 3-Tech&Art, 4-Today&Fut
             [
-                "<img src='https://333616.selcdn.ru/links/SlotMachine/image-0.svg'>",
+                // "<img src='https://333616.selcdn.ru/links/SlotMachine/image-0.svg'>",
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-1.svg'>",
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-2.svg'>",
                 "<img src='https://333616.selcdn.ru/links/SlotMachine/image-3.svg'>",
@@ -480,32 +480,32 @@ slot_machine.init({
         ],
         combinations: [
             // Technology & Future
-            {
-                targets: [0, 0, 0]
-            },
+            // {
+            //     targets: [0, 0, 0]
+            // },
             // Socializing & Fun
             {
-                targets: [1, 1, 1]
+                targets: [1, 1, 0]
             },
 
             // Gaming & Blockchain
             {
-                targets: [2, 2, 2]
+                targets: [2, 2, 1]
             },
 
             // Technology & Art
             {
-                targets: [5, 3, 3]
+                targets: [5, 3, 2]
             },
 
             // Today & Future
             {
-                targets: [3, 4, 4]
+                targets: [3, 4, 3]
             },
 
             // Play & Earn
             {
-                targets: [6, 6, 5]
+                targets: [6, 6, 4]
             }
         ]
     }
